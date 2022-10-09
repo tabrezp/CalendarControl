@@ -37,15 +37,9 @@ import PackageDescription
 
 let package = Package(
   name: "CalendarControl",
-  platforms: [
-    .iOS(.v14), .tvOS(.v14)
-  ],
-  products: [
-    .library(
-      name: "CalendarControl"
-      targets: ["CalendarControl"]
-    ),
-  ],
+  platforms: [.iOS(.v14)],
+  products: [.library(name: "CalendarControl",
+                      targets: ["CalendarControl"])],
   targets: [
   .binaryTarget(
     name: "CalendarControl",
